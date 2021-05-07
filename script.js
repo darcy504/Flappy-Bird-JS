@@ -14,6 +14,10 @@ setInterval(function(){
     if(jumping===0){
         character.style.top = (characterTop+3)+"px";
     }
+    if(characterTop>480){
+        alert("You lose");
+        character.style.top = 100 + "px";
+    }
 },10);
 
 function jump() {
