@@ -18,6 +18,8 @@ setInterval(function(){
     }
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
+    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    var cTop = -(500-characterTop);
     if(characterTop>480){
         alert("You lose. Score: "+counter);
         character.style.top = 100 + "px";
